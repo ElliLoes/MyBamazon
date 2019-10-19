@@ -58,7 +58,7 @@ function makeOrder() {
                     inquirer.prompt({
                         name: "proceed",
                         type: "confirm",
-                        message: "Would you still like to purchase this product?"
+                        message: "Would you like to purchase a different product?"
                     }).then(function (answer) {
                         if (answer.proceed) {
                             makeOrder(answer.itemId);
